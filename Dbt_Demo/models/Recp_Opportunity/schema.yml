@@ -1,0 +1,9 @@
+version: 2
+
+
+sources:
+  - name: Staging
+    database: Demo
+    schema: Staging
+    tables:
+        - name: stg_opportunity
