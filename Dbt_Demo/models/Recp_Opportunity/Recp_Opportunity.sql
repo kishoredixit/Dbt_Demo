@@ -1,7 +1,6 @@
 {{ config(materialized='table') }}
 with Recp_Opportunity as (
-select * from {{ source('Staging', 'stg_opportunity') }} 
-where "ExecutionDate" >= (select max("ExecutionDate" ) from "Staging".stg_opportunity )
+select * from "Staging"."stg_opportunity"
 ),
 
 final as (

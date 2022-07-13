@@ -7,3 +7,4 @@ sources:
     schema: Staging
     tables:
         - name: stg_opportunity
+        - name: stg_opportunityhistory
