@@ -1,6 +1,5 @@
 version: 2
 
-
 sources:
   - name: Staging
     database: Demo
@@ -8,3 +7,10 @@ sources:
     tables:
         - name: stg_opportunity
         - name: stg_opportunityhistory
+        - name: stg_account
+        - name: stg_opportunitylineitem
+  - name: DWh
+    database: Demo
+    schema: DWh 
+    tables:
+        - name: dim_opportunity     
